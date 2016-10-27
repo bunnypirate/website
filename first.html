@@ -3,36 +3,45 @@
   <head>
     <meta charset="UTF-8">
     <title>News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!--[if lt IE 9]>
-    <script>
-      document.createElement("article");
-      document.createElement("aside");
-      document.createElement("footer");
-      document.createElement("header");
-      document.createElement("main");
-      document.createElement("nav");
-      document.createElement("section");
-    </script>
-    <![endif]-->
+
   </head>
   <body>
-    <header class="banner">
-      <h1>News</h1>
-      <p>Local and National News</p>
+    <header>
+      <div class="page-header">
+        <h1>News <small>Local and National News</small></h1>
+      </div>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="archive.html">Archives</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">News Channel</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
 
-    <main>
-      <section>
-        <h2>Local News</h2>
+    <div class="row">
+
+      <div class="col-md-8 text-align right"><h2>Local News</h2>
         <article>
           <header>
             <h3>Fire fighters rescue man from building</h3>
@@ -41,16 +50,28 @@
           <p>This is the story text. This is the story text.</p>
           <p>This is the story text. This is the story text.</p>
         </article>
+        <section>
 
-        <article>
-          <header>
-            <h3>New Library to be built</h3>
-            <p>(author, date)</p>
-          </header>
-          <p>This is the story text. This is the story text.</p>
-          <p>This is the story text. This is the story text.</p>
-        </article>
-      </section>
+          <article>
+            <header>
+              <h3>New Library to be built</h3>
+              <p>(author, date)</p>
+            </header>
+            <p>This is the story text. This is the story text.</p>
+            <p>This is the story text. This is the story text.</p>
+          </article>
+        </section>
+
+      </div>
+      <div class="col-md-4"><aside>
+
+        <h2>Be a news reporter</h2>
+        <p>If you see news happening - Send us a Text.</p>
+
+      </aside>
+
+      </div>
+    </div>
 
       <section>
         <h2>National News</h2>
@@ -73,11 +94,6 @@
         </article>
       </section>
     </main>
-
-    <aside>
-      <h2>Be a news reporter</h2>
-      <p>If you see news happening - Send us a Text.</p>
-    </aside>
 
     <footer>
       <p>Footer Information</p>
